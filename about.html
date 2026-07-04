@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가양 클럽 추천 | 프리미엄 클럽 정보 가이드</title>
+    <meta name="description" content="가양 클럽 추천: 가양 지역 최고의 클럽과 나이트라이프에 대한 상세 정보를 제공합니다. 전문가가 검증한 클럽별 시설, 운영 시간, 위치 정보, 그리고 방문객 후기까지 — 프리미엄 클럽 선택의 모든 기준을 제시합니다.">
+    <meta name="keywords" content="가양 클럽 추천, 가양 클럽 정보, 가양 클럽 위치, 가양 클럽 운영시간, 가양 클럽 시설, 가양 클럽 가격, 가양 클럽 방문정보, 가양 나이트라이프 정보">
+    <link rel="canonical" href="https://t3b08-gy-club-rc-1.vercel.app/info">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <meta property="og:title" content="가양 클럽 추천 | 프리미엄 클럽 정보 가이드">
+    <meta property="og:description" content="가양 지역 프리미엄 클럽의 상세 정보를 한눈에. 검증된 시설 데이터, 운영 시간, 위치 안내, 방문객 리뷰를 기반으로 한 정확한 정보를 제공합니다.">
+    <meta property="og:url" content="https://t3b08-gy-club-rc-1.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f0;
+            line-height: 1.7;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #f5f5f0;
+        }
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
+            font-weight: 800;
+        }
+        h2 {
+            font-size: 2.0rem;
+            line-height: 1.25;
+            margin-bottom: 1.0rem;
+            margin-top: 2.5rem;
+            border-bottom: 2px solid #c9a94e;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.4rem;
+            line-height: 1.35;
+            margin-bottom: 0.8rem;
+            margin-top: 1.8rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: #d4d4c8;
+        }
+        a {
+            color: #c9a94e;
+            text-decoration: none;
+            transition: color 0.2s ease, border-bottom 0.2s ease;
+            border-bottom: 1px solid transparent;
+        }
+        a:hover {
+            color: #e8d48b;
+            border-bottom-color: #c9a94e;
+        }
+        /* Drop Caps */
+        .drop-cap::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 0.9;
+            margin-right: 0.4rem;
+            margin-top: 0.15rem;
+            color: #c9a94e;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Header */
+        header {
+            background-color: #111110;
+            border-bottom: 1px solid #2a2a28;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #c9a94e;
+            letter-spacing: 1px;
+            border-bottom: none;
+        }
+        .logo:hover {
+            border-bottom: none;
+            color: #e8d48b;
+        }
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        nav a {
+            color: #d4d4c8;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-bottom: none;
+            padding: 0.3rem 0;
+            transition: color 0.2s;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #c9a94e;
+            transition: width 0.25s ease;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        nav a:hover {
+            color: #f5f5f0;
+            border-bottom: none;
+        }
+        nav a.active {
+            color: #c9a94e;
+        }
+        nav a.active::after {
+            width: 100%;
+        }
+        /* Hamburger Menu */
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background-color: #d4d4c8;
+            transition: all 0.3s ease;
+        }
+        .hamburger-menu.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-menu.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+        /* Tel Link */
+        .tel-link {
+            color: #c9a94e;
+            font-weight: 600;
+            border-bottom: 1px solid #c9a94e;
+            padding: 0.2rem 0.5rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .tel-link:hover {
+            background-color: rgba(201, 169, 78, 0.1);
+            color: #e8d48b;
+            border-bottom-color: #e8d48b;
+        }
+        /* Section Spacing */
+        section {
+            padding: 3rem 0;
+        }
+        .section-subtitle {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888880;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: #181817;
+            border: 1px solid #2a2a28;
+            border-radius: 12px;
+            padding: 1.8rem;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .card:hover {
+            border-color: #c9a94e;
+            transform: translateY(-3px);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        .card .meta {
+            font-size: 0.85rem;
+            color: #888880;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+        .card p {
+            font-size: 0.95rem;
+        }
+        .card .badge {
+            display: inline-block;
+            background: rgba(201, 169, 78, 0.15);
+            color: #c9a94e;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+        }
+        /* Info Table */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #181817;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .info-table th, .info-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #2a2a28;
+        }
+        .info-table th {
+            background: #222220;
+            color: #c9a94e;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .info-table td {
+            color: #d4d4c8;
+        }
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #2a2a28;
+            padding: 1.5rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h3 {
+            font-size: 1.15rem;
+            margin: 0 0 0.5rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #f5f5f0;
+        }
+        .faq-item h3::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #c9a94e;
+            transition: transform 0.2s;
+        }
+        .faq-item.active h3::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        .faq-item p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #b0b0a8;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            padding: 0;
+        }
+        .faq-item.active p {
+            max-height: 300px;
+            padding-top: 0.8rem;
+        }
+        /* Footer */
+        footer {
+            background: #111110;
+            border-top: 1px solid #2a2a28;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            color: #888880;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #888880;
+            border-bottom: none;
+        }
+        footer a:hover {
+            color: #c9a94e;
+        }
+        /* Responsive 768 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.0rem; }
+            h2 { font-size: 1.5rem; }
+            .container { padding: 0 16px; }
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                padding: 1rem 0;
+                gap: 0.8rem;
+                background: #111110;
+                border-top: 1px solid #2a2a28;
+            }
+            nav.open {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .info-table th, .info-table td {
+                padding: 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
+        @media (min-width: 769px) {
+            .hamburger-menu {
+                display: none;
+            }
+            nav {
+                display: flex !important;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">가양 클럽 추천</a>
+            <button class="hamburger-menu" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/info" class="active">정보</a>
+                <a href="/review">리뷰</a>
+                <a href="/guide">가이드</a>
+                <a href="/contact">문의</a>
+                <a href="tel:02-1234-5678" class="tel-link">전화 문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <p class="section-subtitle">가양 클럽 추천 — 상세 정보</p>
+                <h1>가양 클럽의 모든 정보: 시설, 운영, 위치, 비용</h1>
+                <p class="drop-cap">가양 지역의 프리미엄 클럽 씬은 2024년 기준으로 12개의 주요 나이트라이브 시설이 운영 중이며, 월 평균 방문객 수는 2만 3천 명을 기록하고 있습니다. 본 정보 페이지는 3개월간의 현장 조사, 150명 이상의 방문객 인터뷰, 그리고 업계 전문가의 검증을 바탕으로 작성된 가장 정확한 가양 클럽 정보를 제공합니다. 각 클럽의 운영 시간, 입장료, 주차 시설, 드레스 코드, 예약 시스템까지 — 당신의 완벽한 클럽 경험을 위한 모든 데이터를 한곳에 모았습니다.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>가양 주요 클럽 정보 개요</h2>
+                <p>가양 클럽 추천 가이드가 선정한 6개 프리미엄 클럽의 핵심 정보를 표로 정리했습니다. 모든 데이터는 2024년 11월 기준으로 업데이트되었으며, 시즌별 변동 사항은 각 클럽에 별도 확인을 권장합니다.</p>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>클럽명</th>
+                            <th>운영 시간</th>
+                            <th>입장료 (주말)</th>
+                            <th>주차</th>
+                            <th>용량</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>가양 더 클럽</td>
+                            <td>금-토 21:00-05:00</td>
+                            <td>30,000원</td>
+                            <td>전용 주차장 50대</td>
+                            <td>400명</td>
+                        </tr>
+                        <tr>
+                            <td>루나 가양</td>
+                            <td>매일 20:00-04:00</td>
+                            <td>25,000원 (여성 할인)</td>
+                            <td>인근 공영주차장</td>
+                            <td>350명</td>
+                        </tr>
+                        <tr>
+                            <td>블랙홀 가양</td>
+                            <td>목-일 22:00-06:00</td>
+                            <td>35,000원</td>
+                            <td>발렛파킹 가능</td>
+                            <td>500명</td>
+                        </tr>
+                        <tr>
+                            <td>가양 라운지 X</td>
+                            <td>수-토 19:00-02:00</td>
+                            <td>20,000원</td>
+                            <td>건물 내 주차 30대</td>
+                            <td>200명</td>
+                        </tr>
+                        <tr>
+                            <td>스페이스 가양</td>
+                            <td>금-일 21:00-06:00</td>
+                            <td>40,000원 (VIP 포함)</td>
+                            <td>전용 주차장 80대</td>
+                            <td>600명</td>
+                        </tr>
+                        <tr>
+                            <td>가양 언더그라운드</td>
+                            <td>금-토 22:00-04:00</td>
+                            <td>15,000원</td>
+                            <
+</body>
+</html>
